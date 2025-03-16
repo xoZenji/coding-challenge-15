@@ -3,12 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Challenge 15</title>
+    <title>Risk Management Dashboard</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 5px;
+            padding: 5px;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        #riskDashboard {
+            border: 1px solid lightgray;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .risk-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid white;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Risk Management Dashboard</h1>
+
+    <!-- Task 1: Base Structure Setup -->
+    <form id="riskForm">
+        <label for="riskDescription">Input Risk:</label>
+        <input type="text" id="riskDescription" name="riskDescription" required><br><br>
+        
+        <label for="riskLevel">Risk Level:</label>
+        <select id="riskLevel" name="riskLevel" required>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="riskDashboard">
+        <p>Input a risk to see it below.</p>
+    </div>
+
+    <script src="cc_15.js"></script>
 </body>
-
-<script src = "cc_15.js"></script>
-
 </html>
